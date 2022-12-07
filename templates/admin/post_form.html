@@ -1,0 +1,17 @@
+{% extends "base_template.html" %}
+
+{% block title %}
+    {% if post_id %}
+        Modificando el post {{post_id}}
+    {% else %}
+        Creando un nuevo post
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if post_id %}
+        <h3 class="titles">Modificando el post {{post_id}}</h3>
+    {% else %}
+        <h3 class="titles">Nuevo post</h3>
+    {% endif %}
+{% endblock %}

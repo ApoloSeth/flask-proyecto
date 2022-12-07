@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.titles {
+    font-size: 2rem;
+    color: rgb(241, 31, 31);
+}
+
+.parrafos {
+    font-size: 1rem;
+    color: blue;
+}
