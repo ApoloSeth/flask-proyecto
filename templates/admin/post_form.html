@@ -1,17 +1,39 @@
 {% extends "base_template.html" %}
 
 {% block title %}
-    {% if post_id %}
-        Modificando el post {{post_id}}
+    {% if form.title.data %}
+        {{ form.title.data }}
     {% else %}
-        Creando un nuevo post
+        Creando Posts
     {% endif %}
 {% endblock %}
 
 {% block content %}
-    {% if post_id %}
-        <h3 class="titles">Modificando el post {{post_id}}</h3>
-    {% else %}
-        <h3 class="titles">Nuevo post</h3>
-    {% endif %}
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.title.label }}
+            {{ form.title(size=128) }}
+            {% for error in form.title.errors %}
+                <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.title_slug.label }}
+            {{ form.title_slug(size=128) }}
+            {% for error in errors %}
+                <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.content.label }}
+            {{ form.content }}
+            {% for error in form.content.errors %}
+                <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
 {% endblock %}

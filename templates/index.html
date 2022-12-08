@@ -1,9 +1,13 @@
 {% extends "base_template.html" %}
 
 {% block title %}
-    posts: Miniblog
+    Flask: Miniblog
 {% endblock %}
 
 {% block content %}
-    <h3 class="titles">Hay {{ num_posts }} posts</h3>
+    <ul>
+    {% for post in posts %}
+        <li>{{ post.title }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}

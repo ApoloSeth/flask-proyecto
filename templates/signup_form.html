@@ -1,0 +1,38 @@
+{% extends "base_template.html" %}
+
+{% block title %}Resgistro de usuarios{% endblock %}
+
+{% block content %}
+    <header class="header-signup">
+        <h1>Formulario de registro</h1>
+    </header>
+    <main class="signup-form">
+        <form class="container-signup" action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <div>
+                {{ form.name.label }}
+                {{ form.name(size=64) }}
+                {% for error in form.name.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{ form.email.label }}
+                {{ form.email }}
+                {% for error in form.email.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{ form.password.label }}
+                {{ form.password }}
+                {% for error in form.password.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+    </main>
+{% endblock %}
