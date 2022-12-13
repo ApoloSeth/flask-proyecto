@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-    <form action="" method="post" novalidate>
+    <form class="container-postform" action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <div>
             {{ form.title.label }}
@@ -25,7 +25,7 @@
                 <span>{{ error }}</span>
             {% endfor %}
         </div>
-        <div>
+        <div class="contenido">
             {{ form.content.label }}
             {{ form.content }}
             {% for error in form.content.errors %}

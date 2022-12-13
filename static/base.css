@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
 
 *{
     box-sizing: border-box;
@@ -21,16 +22,48 @@ html {
 }
 
 
+/* Estilos generales del menu de navegación */
+
+.navegador {
+    margin: 2rem;
+    font-family: 'Nerko One', cursive;
+    font-weight: 300;
+    color: rgb(4, 4, 126);
+    font-size: 1.5rem;
+    border: 0.1rem solid rgb(167, 166, 166);
+    border-radius: 4rem;
+    box-shadow: 4px 4px 16px rgb(4, 152, 189);
+}
+
+.navegador ul {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    justify-content: end;
+    padding: 1rem 2rem;
+}
+
+.navegador ul li {
+    margin: 1rem 2rem;
+}
+
+.navegador ul a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('https://res.cloudinary.com/dxwoarr1w/image/upload/v1670341576/cld-sample-2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 /* Estilos para la plantilla signup-form */
 
 .header-signup {
     text-align: center;
     margin: 2rem;
-    border: 0.1rem solid black;
-    border-radius: 2rem;
     padding: 1rem 0;
-    background: rgb(40, 60, 151);
-    color: white;
+    color: #454646;
     font-family: 'Nerko One', cursive;
     font-size: 1.5rem;
 }
@@ -69,6 +102,9 @@ html {
     height: 3rem;
     padding: 1rem 2rem;
     overflow: hidden;
+    background: #051937;
+    opacity: 70%;
+    color: white;
 }
 
 .signup-form .container-signup #submit {
@@ -77,8 +113,9 @@ html {
     margin-top: 5rem;
     font-weight: 700;
     background-color: rgb(68, 63, 63);
-    box-shadow: 7px 7px 20px rgb(39, 39, 172);
+    box-shadow: 7px 7px 20px #00C9B7;
     color: rgb(153, 152, 152);
+    opacity: 100%;
 
 }
 
@@ -89,3 +126,76 @@ html {
     font-weight: 700;
 }
 
+/* Estilos de la plantilla admin/post/ (Crear o midificar un post) */
+
+.container-postform {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik Gemstones', cursive;
+    color: #013632;
+}
+
+.container-postform div {
+    margin: 2rem 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-postform label {
+    margin: 0 2rem;
+    font-size: 2rem;
+    font-weight:400;
+    transform: rotate(-6deg);
+}
+
+.container-postform input {
+    font-family: 'Nerko One', cursive;
+    height: 3rem;
+    width: 50%;
+    border-radius: 3rem;
+    border: 0.1rem solid gray;
+    background: #051937;
+    opacity: 80%;
+    color: antiquewhite;
+    padding: 1rem 2rem;
+
+}
+
+.container-postform span {
+    position: absolute;
+    transform: translate(25rem, 2.5rem);
+    /* transform: rotate(-25deg); */
+    color: rgb(158, 4, 4);
+    font-size: 1.2rem;
+}
+
+.container-postform .contenido {
+    width: 100%;
+    height: 30rem;
+}
+
+.container-postform #content {
+    width: 70%;
+    height: 80%;
+    border-radius: 5rem;
+    background: #00C9B7;
+    box-shadow: 15px 15px 8px #051937;
+    opacity: 50%;
+    padding: 1rem 3rem;
+    font-family: 'Nerko One', cursive;
+}
+
+.container-postform #submit {
+    width: min-content;
+    height: min-content;
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 2rem;
+    font-weight:200;
+    background: #333333;
+    color:rgb(164, 165, 165);
+    box-shadow: 10px 10px 16px #00C9B7;
+}
