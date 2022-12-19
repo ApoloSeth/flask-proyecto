@@ -18,13 +18,6 @@
                 <span>{{ error }}</span>
             {% endfor %}
         </div>
-        <div>
-            {{ form.title_slug.label }}
-            {{ form.title_slug(size=128) }}
-            {% for error in errors %}
-                <span>{{ error }}</span>
-            {% endfor %}
-        </div>
         <div class="contenido">
             {{ form.content.label }}
             {{ form.content }}

@@ -74,6 +74,15 @@ body {
     place-content: center;
 }
 
+.signup-form .error{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 4, 4);
+    font-size: 1.5rem;
+    background-color: #333333;
+    padding: 0.5rem 1rem;
+}
+
 .signup-form .container-signup{
     display: flex;
     flex-direction: column;
@@ -92,6 +101,9 @@ body {
     margin: 0 2rem;
     font-family: 'Nerko One', cursive;
     font-weight: 400;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
 }
 
 
@@ -124,6 +136,8 @@ body {
     position: absolute;
     transform: translate(22rem, 2rem);
     font-weight: 700;
+    background-color: #333333;
+    padding: 0 1rem;
 }
 
 /* Estilos de la plantilla admin/post/ (Crear o midificar un post) */
@@ -150,6 +164,9 @@ body {
     font-size: 2rem;
     font-weight:400;
     transform: rotate(-6deg);
+    background-color: antiquewhite;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
 }
 
 .container-postform input {
@@ -184,7 +201,7 @@ body {
     border-radius: 5rem;
     background: #00C9B7;
     box-shadow: 15px 15px 8px #051937;
-    opacity: 50%;
+    opacity: 70%;
     padding: 1rem 3rem;
     font-family: 'Nerko One', cursive;
 }

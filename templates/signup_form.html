@@ -7,6 +7,9 @@
         <h1>Formulario de registro</h1>
     </header>
     <main class="signup-form">
+        {% if error %}
+            <p class="error">Error: {{ error }}</p>
+        {% endif %}
         <form class="container-signup" action="" method="post" novalidate>
             {{ form.hidden_tag() }}
             <div>

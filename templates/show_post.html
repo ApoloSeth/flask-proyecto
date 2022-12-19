@@ -1,9 +1,11 @@
 {% extends "base_template.html" %}
 
-{% block title %} Mostrando el post {{ slug_title }} {% endblock %}
+{% block title %} Mostrando el post {{ post.title }} {% endblock %}
 
 {% block content %}
-    <p class="parrafos">
-        Mostrando el post {{ slug_title }}
-    </p>
+    {% if error %}
+        <p>Error: {{error}}</p>
+    {% endif %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
 {% endblock %}
