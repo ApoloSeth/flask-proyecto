@@ -33,5 +33,6 @@ if defined _OLD_CODEPAGE (
     set _OLD_CODEPAGE=
 )
 
-set "FLASK_APP=run.py"
+
+set "FLASK_DEBUG=1"
 set "FLASK_ENV=development"
