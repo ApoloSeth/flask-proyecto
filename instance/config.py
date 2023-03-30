@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:PGodrojasb852456@localhost:5432/miniblog'
